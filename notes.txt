@@ -1,0 +1,6 @@
+
+poetry remove quant
+poetry add --editable ../quant
+
+poetry run uvicorn backend.main:app --reload
+

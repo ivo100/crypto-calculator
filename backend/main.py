@@ -1,8 +1,11 @@
+#from __future__ import annotations
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import Optional, Dict, Any
 from enum import Enum
+
+from crypto import StopLossCalc, TickerData
 
 app = FastAPI(title="Quant Trading Calculator API")
 
